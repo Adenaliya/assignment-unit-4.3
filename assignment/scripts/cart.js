@@ -3,13 +3,28 @@ console.log('***** Cart Functions *****');
 // We want to see how you are testing your code!!!
 
 
+let basket=[ ];
+
+function addItem( item ){
+     console.log('addToBasket',item );
+    basket.push( item);
+    console.log(addItem);
+    return true;
+}
 
 
+function listItems(){
+    console.log( 'whats in your basket' );
+    for( let i=0; i<basket.length; i++ ){
+        console.log( basket[ i ] );
+    } 
+}
 
-
-
-
-
+function empty() {
+    while (basket.length > 0) {
+      basket.pop();
+    }
+}
 
 
 // DO NOT MODIFY
