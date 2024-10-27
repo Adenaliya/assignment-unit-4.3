@@ -1,30 +1,34 @@
-console.log('***** Cart Functions *****');
+console.log(' Cart Functions');
 // Make sure to test all functions here in the JS file!
 // We want to see how you are testing your code!!!
 
 
-let basket=[ ];
-
-function addItem( item ){
-     console.log('addToBasket',item );
-    basket.push( item);
-    console.log(addItem);
-    return true;
-}
-
+let basket = [];
+function addItem(Item){
+basket.push(Item);
+console.log('in basket Array',[basket]);
+return true;
+};
 
 function listItems(){
-    console.log( 'whats in your basket' );
+    console.log( 'in listItems', );
     for( let i=0; i<basket.length; i++ ){
         console.log( basket[ i ] );
     } 
-}
+    return true;
+};
+function empty(){
 
-function empty() {
-    while (basket.length > 0) {
-      basket.pop();
-    }
-}
+basket.splice(0, basket.length);
+console.log([basket]);
+};
+
+
+
+
+
+
+
 
 
 // DO NOT MODIFY
